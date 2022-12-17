@@ -3,5 +3,4 @@ from .views import base,listar
 
 urlpatterns = [ 
     path('base/', base),
-    path('listar/',listar)
 ]
