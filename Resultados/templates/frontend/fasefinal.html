@@ -2,7 +2,11 @@
 {% load static %}
 {% block title %} <title> Fase Final</title>  {% endblock %}
 {% block content %}
-<div>
+<div class="fase-grupos">
     <h1>FASE Final</h1>
+    <form method="POST" class="formulario-final">{% csrf_token %}
+        {{ prediccion}}
+        <button type="submit" class="save btn btn-default">Guardar Apuesta</button>
+      </form>
 </div>
 {% endblock %}
