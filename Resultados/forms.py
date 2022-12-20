@@ -4,7 +4,6 @@ from django import forms
 
 
 
-INTEGER_CHOICES= [tuple([x,x]) for x in range(1,32)]
 class PrediccionForm(ModelForm):
     class Meta:
         model = Prediccion
@@ -14,5 +13,4 @@ class PrediccionForm(ModelForm):
             'partido': forms.TextInput(attrs={'class': 'form-control', 'placeholder': 'Haz tu prediccion'}),
             'marcador': forms.TextInput(attrs={'class': 'form-control', 'placeholder': 'Haz tu prediccion'}),
             'tarjetas': forms.TextInput(attrs={'class': 'form-control', 'placeholder': 'Haz tu prediccion'}),
-            'widget' : forms.Select(choices=INTEGER_CHOICES)
         }
