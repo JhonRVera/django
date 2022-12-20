@@ -12,3 +12,10 @@ def fasegrupos(request):
 
 def fasefinal(request):
     return render(request,'frontend/fasefinal.html')
+
+def resultados(request):
+    return render(request,'frontend/tablaResultados.html')
+
+def login(request):
+    return render(request,'frontend/login.html')
+

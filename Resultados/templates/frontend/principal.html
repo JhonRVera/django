@@ -7,7 +7,8 @@
    <!-- Mobile Metas -->
    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
    <!-- Site Metas -->
-   <title>Game Info</title>
+   {% block title %} <title> Apuestas deportivas</title> {% endblock %}
+
    <meta name="keywords" content="">
    <meta name="description" content="">
    <meta name="author" content="">
@@ -61,7 +62,7 @@
                            <!-- button section -->
                            <ul class="login">
                               <li class="login-modal">
-                                 <a href="#" class="login"><i class="fa fa-user"></i>Login</a>
+                                 <a href="/resultados/login/" class="login"><i class="fa fa-user"></i>Login</a>
                               </li>
                               <li>
                                  <div class="cart-option">
@@ -95,6 +96,7 @@
                                           <li class="active"><a href="/resultados/base/">Inicio</a></li>
                                           <li><a href="/resultados/fasegrupos/">Apuesta Fase De Grupos</a></li>
                                           <li><a href="/resultados/fasefinal/">Apuesta Fase Final</a></li>
+                                          <li><a href="/resultados/tablaResultados/">Tabla de posiciones</a></li>
                                        </ul>
                                     </div>
                                     <!-- /.nav-collapse -->
@@ -370,5 +372,7 @@
       <script src="{%static 'js/all.js' %}"></script>
       <!-- ALL PLUGINS -->
       <script src="{%static 'js/custom.js' %}"></script>
+      {% block content %}
+      {% endblock %}
    </body>
 </html>
