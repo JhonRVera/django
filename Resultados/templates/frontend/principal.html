@@ -17,6 +17,7 @@
    <link rel="apple-touch-icon" href="">
    <!-- Bootstrap CSS -->
    <link rel="stylesheet" href="{%static 'css/bootstrap.min.css' %}">
+   <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous"> -->
    <!-- Site CSS -->
    <link rel="stylesheet" href="{%static 'style.css' %}">
    <!-- Responsive CSS -->
@@ -315,6 +316,56 @@
                   </aside>
                </div>
             </div>
+         <div class="row">
+            <div class="container">
+               <h1>Apuestas del Mundial Qatar 2022</h1>
+               <form>
+                 <div class="form-group">
+                   <label for="nombre">Ingrese su nombre:</label>
+                   <input type="text" class="form-control" id="nombre" placeholder="Ingrese su nombre">
+                 </div>
+                 <div class="form-group">
+                   <label for="partido">Seleccione el partido:</label>
+                   <select class="form-control" id="partido">
+                     <option>Grupo A - Argentina vs. Brasil</option>
+                     <option>Grupo B - España vs. francia</option>
+                     <option>Octavos de final - Alemania vs. Italia</option>
+                     <option>Cuartos de final - Inglaterra vs. Portugal</option>
+                     <option>Semifinal - Uruguay vs. México</option>
+                     <option>Final - Chile vs. Estados Unidos</option>
+                   </select>
+                 </div>
+                 <div class="form-group">
+                   <label for="apuesta1">Apuesta por el marcador:</label>
+                   <input type="text" class="form-control" id="apuesta1" placeholder="Ingrese su apuesta">
+                 </div>
+                 <div class="form-group">
+                   <label for="apuesta2">Apuesta por el número de tarjetas amarillas:</label>
+                   <input type="number" class="form-control" id="apuesta2" placeholder="Ingrese su apuesta">
+                 </div>
+                 <button type="submit" class="btn btn-primary" onclick="agregarApuesta()">Realizar apuesta</button>
+               </form>
+               <br>
+               <br>
+               <h2>Tabla de puntuación</h2>
+               <table class="table table-bordered" id="tablaPuntuacion">
+                 <thead>
+                   <tr>
+                     <th>Nombre</th>
+                     <th>Apuesta por el marcador</th>
+                     <th>Apuesta por tarjetas amarillas</th>
+                     <th>Puntos</th>
+                   </tr>
+                 </thead>
+                 <tbody>
+                 </tbody>
+               </table>
+               <br>
+               <h2>Ganador</h2>
+               <p id="ganador"></p>
+             </div>
+               </body>
+         </div>
          </div>
       </section>
       <footer id="footer" class="footer">
