@@ -152,10 +152,10 @@
             <div class="news">
                <div class="container">
                   <div class="heading-slider">
-                     <p class="headline"><i class="fa fa-star" aria-hidden="true"></i> GANADOR :</p>
+                     <p class="headline"><i class="fa fa-star" aria-hidden="true"></i> CAMPEON MUNDIAL :</p>
                      <!--made by vipul mirajkar thevipulm.appspot.com-->
                      <h1>
-                     <a href="" class="typewrite" data-period="2000" data-type='[ "PEPITO PEREZ", "PEPITO PEREZ", "PEPITO PEREZ"]'>
+                     <a href="" class="typewrite" data-period="2000" data-type='[ "CAMPEON ARGENTINA", "CAMPEON ARGENTINA", "CAMPEON ARGENTINA"]'>
                      <span class="wrap"></span>
                      </a>
                      </h1	   
@@ -166,6 +166,8 @@
             </div>
          </div>
       </section>
+      {% block content %}
+      {% endblock %}
       <div class="matchs-info">
          <div class="col-md-6 col-sm-6 col-xs-12">
             <div class="row">
@@ -372,7 +374,6 @@
       <script src="{%static 'js/all.js' %}"></script>
       <!-- ALL PLUGINS -->
       <script src="{%static 'js/custom.js' %}"></script>
-      {% block content %}
-      {% endblock %}
+
    </body>
 </html>
