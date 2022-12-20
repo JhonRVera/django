@@ -2,7 +2,33 @@
 {% block title %} <title> Tabla Posiciones</title> {% endblock %}
 
 {% block content %}
-<div style="border: 1px solid red;">
-    <h1>Tabla de posiciones</h1>
+<div class="fase-grupos">
+    <h1 style="text-align: center;">Tabla de posiciones</h1>
+    <div class="tabla-resultados">
+        {% for i in prediccion %}
+        <table class="default">
+            <tr>
+              <th>Nombre</th>
+              <th>Partido</th>
+              <th>Marcador</th>
+              <th>Numero Tarjetas</th>
+            </tr>
+          
+            <tr>
+              <td>{{i.nombre}}</td>
+            </tr>
+          
+            <tr>
+              <td>{{i.partido}}</td>
+            </tr>
+            <tr>
+              <td>{{i.marcador}}</td>
+            </tr>
+            <tr>
+                <td>{{i.tarjetas}}</td>
+            </tr>
+          </table>
+        {% endfor %}
+    </div>
 </div>
 {% endblock %}
