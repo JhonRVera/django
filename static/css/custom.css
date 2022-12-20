@@ -1145,9 +1145,8 @@ section.main-heading h2::after {
 }
 
 .inner-page-banner {
-    float: left;
     width: 100%;
-    min-height: 650px;
+    min-height: 300px;
     background-image: url('../images/about.png');
     background-position: center center;
     background-repeat: no-repeat;
